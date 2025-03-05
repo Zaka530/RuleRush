@@ -1,0 +1,8 @@
+Qaysi transport vositasining haydovchisi yo'lda tezlashtirish chizig'i bo'lsa, unga kirish qoidalarini buzadi?
+Ikkala haydovchi ham to'g'ri chiqishadi.
+Yashil avtomobil haydovchisi.
+Moviy mashina haydovchisi.
+Har ikki haydovchi.
+
+1
+Yashil avtomobil haydovchisi.

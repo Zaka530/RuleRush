@@ -1,0 +1,8 @@
+Barcha transport vositalari 80 km/soat tezlikda harakatlanayotgan bo‘lsa, qaysi haydovchi qoidani buzadi?
+Hech kim buzmaydi.
+Mototsikl va avtomobil haydovchilari.
+Mototsikl va yuk mashinalari haydovchilari.
+Mototsikl haydovchisi.
+Barcha haydovchilar.
+1
+Hech kim buzmaydi.

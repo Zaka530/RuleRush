@@ -1,0 +1,8 @@
+Qanday transport vositalarini boshqarishga ruxsat beriladi?
+Barcha transport vositalari.
+Avtomobillar va mototsikllar.
+Tramvay va mototsikl.
+Tramvay, yuk mashinasi va mototsikl.
+
+1
+Barcha transport vositalari.

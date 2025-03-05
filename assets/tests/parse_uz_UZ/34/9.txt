@@ -1,0 +1,8 @@
+Qanday transport vositalariga yo'lning o'ng bo'lagida harakatlanishi mumkin?
+Faqat velosipedlar.
+Barcha avtotransport vositalari.
+Faqat marshrut transporti.
+Yo'nalishli transport vositalari va taksilar.
+
+1
+Faqat marshrut transporti.

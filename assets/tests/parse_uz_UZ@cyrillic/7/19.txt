@@ -1,0 +1,8 @@
+Qaysi javob yo'lovchilarni olib ketish va tushirish joylarini to'liq ko'rsatadi?
+Yo'lda yoki trotuarda.
+Yo'lak yoki bordürdan.
+Trotuarda.
+Yo'l chetida yoki yo'lda.
+
+0
+Yo'lak yoki bordürdan.

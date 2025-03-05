@@ -1,0 +1,8 @@
+Avtomobillar chorrahadan quyidagi tartibda o‘tadi:
+Tramvay va avtobus, avtomobil.
+Tramvay, mashina, avtobus.
+Yengil avtomobil, tramvay va avtobus.
+
+
+1
+Yengil avtomobil, tramvay va avtobus.

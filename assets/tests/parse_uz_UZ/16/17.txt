@@ -1,0 +1,8 @@
+Qaysi transport vositalarining haydovchilari yo'lovchilarni tushirish uchun to'g'ri to'xtagan?
+Avtobus haydovchisi.
+Barcha haydovchilar.
+Mototsikl haydovchisi.
+Avtomobil haydovchisi.
+
+1
+Avtomobil haydovchisi.

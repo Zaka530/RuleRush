@@ -1,0 +1,8 @@
+Quyib o'tish taqiqlanadi:
+Temir yo'l kesishmalarida va ulardan 100 m dan ortiq aholi punktlaridan tashqarida.
+Temir yo'l kesishmalarida va ularning oldida 100 m dan yaqinroq.
+Temir yo'l kesishmalarida va ulardan 100 m dan ortiq.
+
+
+0
+Temir yo'l kesishmalarida va ularning oldida 100 m dan yaqinroq.

@@ -1,0 +1,8 @@
+Egri yo'lda harakatlanayotganda, agar harakat bajarilsa, mashina barqarorroq bo'ladi:
+Transmissiya o'chirilgan holda.
+Vites ulangan holda.
+Tezlikni oshirish bilan.
+
+
+0
+Vites ulangan holda.

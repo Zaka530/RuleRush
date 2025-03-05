@@ -1,0 +1,8 @@
+Ushbu gorizontal belgi quyidagi funktsiyani bajaradi:
+Piyodalar uchun maxsus yo'lni belgilaydi.
+Velosipedchilar uchun yo'lni ko'rsatadi, o'qlar sayohat yo'nalishini ko'rsatadi.
+Piyodalar o'tish joyini ko'rsatadi, o'qlar piyodalar harakati yo'nalishini ko'rsatadi.
+
+
+1
+Piyodalar o'tish joyini ko'rsatadi, o'qlar piyodalar harakati yo'nalishini ko'rsatadi.

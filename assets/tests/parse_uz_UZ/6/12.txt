@@ -1,0 +1,8 @@
+Qanday transport vositalarini boshqarishga ruxsat beriladi?
+Barcha transport vositalari.
+Qizil, ko'k va yashil mashinalar.
+Faqat qizil mashina uchun.
+
+
+1
+Qizil, ko'k va yashil mashinalar.

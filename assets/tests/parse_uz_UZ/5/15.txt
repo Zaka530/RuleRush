@@ -1,0 +1,8 @@
+Ushbu identifikatsiya belgisi transport vositasini bildiradi:
+Xavfli yuklarni tashish.
+Kar yoki kar haydovchi tomonidan boshqariladi.
+Og'ir va katta hajmli yuklarni tashish.
+Nogiron tomonidan boshqariladi.
+
+1
+Xavfli yuklarni tashish.

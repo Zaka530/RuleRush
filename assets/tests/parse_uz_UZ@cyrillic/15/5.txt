@@ -1,0 +1,8 @@
+Avtomobillar chorrahadan qanday tartibda o‘tadi?
+Yashil, qizil, ko'k bilan bir vaqtning o'zida sariq.
+Sariq bilan bir vaqtning o'zida qizil, yashil, ko'k.
+Qizil, ko'k, bir vaqtning o'zida sariq, yashil.
+
+
+1
+Qizil, ko'k, bir vaqtning o'zida sariq, yashil.

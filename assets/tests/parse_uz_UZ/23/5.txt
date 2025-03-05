@@ -1,0 +1,8 @@
+Qaysi yo'nalishlarda transport harakati ruxsat etiladi?
+Barcha yo'nalishlarda.
+Chap va o'ng.
+Faqat o'ngga.
+Faqat oldinga.
+Faqat chapga.
+1
+Barcha yo'nalishlarda.

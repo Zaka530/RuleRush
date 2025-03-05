@@ -1,0 +1,8 @@
+Avtomobillar chorrahadan quyidagi tartibda o‘tadi:
+Yashil mashina 2-tramvay, 1-tramvay, ko'k, sariq, qizil mashinalar bilan bir vaqtda.
+1 va 2-tramvaylar bir vaqtning o'zida sariq mashina, yashil, ko'k, qizil vagonlar bilan.
+
+
+
+1
+1 va 2-tramvaylar bir vaqtning o'zida sariq mashina, yashil, ko'k, qizil vagonlar bilan.

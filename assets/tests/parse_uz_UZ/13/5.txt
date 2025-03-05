@@ -1,0 +1,8 @@
+Temir yo'l kesishmasidagi umumiy signal signali quyidagilardan iborat:
+Uchta uzun va bitta qisqa signal.
+Uchta uzun va uchta qisqa signal.
+Bitta uzun va uchta qisqa signal.
+Ikki uzun va ikkita qisqa signal.
+
+0
+Bitta uzun va uchta qisqa signal.

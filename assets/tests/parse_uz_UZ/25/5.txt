@@ -1,0 +1,8 @@
+Qishda pastki oyoqqa gemostatik turniket qancha vaqt davomida qo'llanilishi mumkin?
+1 soatdan ortiq emas.
+2 soatdan ortiq emas.
+3 soatdan ortiq emas.
+
+
+0
+1 soatdan ortiq emas.

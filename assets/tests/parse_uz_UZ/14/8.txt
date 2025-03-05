@@ -1,0 +1,8 @@
+Ushbu yo'l belgisi quyidagilarni bildiradi:
+To'siq bilan jihozlangan bitta yo'lli temir yo'l kesishmasi.
+To'siqsiz bir yo'lli temir yo'l kesishmasi.
+To'siq bilan jihozlanmagan ikki yoki undan ortiq yo'lli temir yo'l kesishmasi.
+
+
+1
+To'siq bilan jihozlanmagan ikki yoki undan ortiq yo'lli temir yo'l kesishmasi.

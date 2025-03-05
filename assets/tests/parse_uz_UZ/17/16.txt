@@ -1,0 +1,8 @@
+Qaysi yo'nalishda harakat taqiqlangan?
+Barcha yo'nalishlarda.
+Chap va o'ng.
+Faqat oldinga.
+Oldinga va orqaga.
+
+1
+Chap va o'ng.

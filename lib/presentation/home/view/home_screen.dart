@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:go_router/go_router.dart';
 import 'package:lucide_icons_flutter/lucide_icons.dart';
 
 import '../bloc/home_bloc.dart';
@@ -34,7 +35,8 @@ class HomeScreen extends StatelessWidget {
                       title: "Шаблоны тестов",
                       icon: LucideIcons.squareCheck, // Заменено
                       color: Colors.blueAccent,
-                      onTap: () {},
+                      onTap: () {context.go('/test_templates');
+                      },
                     ),
                     const SizedBox(height: 16),
                     _buildSectionCard(

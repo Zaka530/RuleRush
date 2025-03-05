@@ -1,0 +1,8 @@
+Uch qatorli ikki tomonlama yo'lda siz o'ngga burilishingiz kerak. Ushbu manevrni qaysi qatordan bajarasiz?
+O'rtadan, faqat o'ng tomoni ishg'ol qilinganda.
+O'ng chiziqdan.
+O'rta chiziqdan.
+O'ng yoki o'rta chiziqdan.
+
+0
+O'ng chiziqdan.

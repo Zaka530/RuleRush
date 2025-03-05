@@ -1,0 +1,8 @@
+Ushbu yo'l belgisi quyidagilarni bildiradi:
+Yo'lning piyodalar o'tish joyi bo'lgan qismi.
+Yo'lning piyodalar yoki piyodalar yo'li mavjud bo'lgan qismi.
+
+
+
+1
+Yo'lning piyodalar o'tish joyi bo'lgan qismi.

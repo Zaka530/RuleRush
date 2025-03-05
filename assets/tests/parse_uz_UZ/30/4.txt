@@ -1,0 +1,8 @@
+Ushbu yo'l belgilari quyidagilarni ko'rsatadi:
+Yo'lning faqat yo'nalishli transport vositalarining harakatlanishi uchun mo'ljallangan bo'lagiga yaqinlashish.
+Yo'lning torayishi yoki qarama-qarshi yo'nalishdagi transport oqimlarini ajratuvchi 1.1 yoki 1.11 belgilariga yaqinlashish.
+40 km/soat dan kam tezlikda harakatlanuvchi yakka transport vositalaridan tashqari barcha transport vositalarini bosib o'tish taqiqlangan zona.
+
+
+1
+Yo'lning torayishi yoki qarama-qarshi yo'nalishdagi transport oqimlarini ajratuvchi 1.1 yoki 1.11 belgilariga yaqinlashish.

@@ -1,0 +1,8 @@
+Tezligi quyidagilardan kam bo'lgan transport vositalarining kesishuvidan faqat temir yo'l boshlig'ining ruxsati bilan harakatlanishi mumkin:
+3 km/soat.
+10 km/soat.
+5 km/soat.
+30 km/soat.
+
+0
+8 km/soat.

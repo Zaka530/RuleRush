@@ -1,0 +1,8 @@
+Avtomobillar chorrahadan quyidagi tartibda o‘tadi:
+Avtobus, velosiped, mashina.
+Avtobus, mashina, velosiped.
+Avtomobil, avtobus, velosiped.
+Velosiped, avtobus, mashina.
+
+1
+Velosiped, avtobus, mashina.

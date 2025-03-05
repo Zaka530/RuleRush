@@ -1,0 +1,8 @@
+Boshqa transport vositasini bosib o'tganda haydovchi qanday harakat qilishi kerak?
+Tezlikni pasaytiring va signalni chaling.
+Yo'laklarni o'zgartirmasdan, o'ngga burilish signali bilan signal bering.
+Tezlikni oshirish yoki boshqa harakatlar bilan quvib o'tishga xalaqit bermang.
+
+
+0
+Tezlikni oshirish yoki boshqa harakatlar bilan quvib o'tishga xalaqit bermang.

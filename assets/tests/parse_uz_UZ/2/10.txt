@@ -1,0 +1,8 @@
+Ushbu gorizontal yo'l belgilari quyidagilarni ko'rsatadi:
+Ketishayotgan yo'lda harakatlanayotgan transport vositalariga yo'l berish uchun zarur bo'lganda haydovchi to'xtashi kerak bo'lgan joy.
+To'xtash taqiqlangan joyga yaqinlashish.
+Yo'lning torayishi, bu erda ma'lum bir yo'nalishdagi bo'laklar soni kamayadi.
+
+
+1
+Ketishayotgan yo'lda harakatlanayotgan transport vositalariga yo'l berish uchun zarur bo'lganda haydovchi to'xtashi kerak bo'lgan joy.

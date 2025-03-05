@@ -1,0 +1,8 @@
+Temir yo'l kesishmasi orqali harakatlanishni taqiqlovchi signal navbatchining haydovchiga qaragan holatidir:
+Boshning tepasida ko'tarilgan tayoq, chiroq yoki bayroq bilan chap yoki o'ng yelka.
+Boshning tepasida ko'tarilgan tayoq, chiroq yoki bayroq bilan har qanday elka yoki ko'krak.
+Ko'krak yoki orqa tayoq bilan, fonar yoki bayroq boshning tepasida ko'tarilgan yoki qo'llar yon tomonlarga cho'zilgan.
+
+
+0
+Ko'krak yoki orqa tayoq bilan, fonar yoki bayroq boshning tepasida ko'tarilgan yoki qo'llar yon tomonlarga cho'zilgan.

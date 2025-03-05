@@ -1,0 +1,8 @@
+Qaysi transport vositasining haydovchisi to'xtash qoidalarini buzgan?
+Barcha transport vositalarining haydovchilari.
+Avtomobil haydovchisi.
+Yuk mashinalari haydovchisi.
+Mototsikl haydovchisi.
+
+1
+Yuk mashinalari haydovchisi.

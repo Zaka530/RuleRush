@@ -1,0 +1,8 @@
+Qaysi javobda to‘xtash qoidalarini buzgan haydovchilar aniqlanadi?
+Moviy mashina haydovchisi.
+Qizil mashina va mototsikl haydovchilari.
+Barcha transport vositalarining haydovchilari.
+Mototsikl haydovchisi.
+
+1
+Barcha transport vositalarining haydovchilari.

@@ -1,0 +1,8 @@
+Avtomobillar qaysi yo'nalishda harakatlanishi mumkin?
+Qizil va ko'k mashinalar - to'g'ri.
+Qizil mashina to'g'ri ketadi, ko'k mashina chapga ketadi.
+Qizil mashina - tekis, ko'k mashina - to'g'ri va chap.
+
+
+1
+Qizil mashina to'g'ri ketadi, ko'k mashina chapga ketadi.

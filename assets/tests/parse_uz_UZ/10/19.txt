@@ -1,0 +1,8 @@
+Avtomobil qaysi yo'nalishda harakatlanishi mumkin?
+Barcha yo'nalishlarda.
+Chap va o'ng.
+Faqat oldinga.
+
+
+1
+Barcha yo'nalishlarda.

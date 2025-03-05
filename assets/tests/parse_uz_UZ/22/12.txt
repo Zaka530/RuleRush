@@ -1,0 +1,8 @@
+Ushbu yo'l belgisi:
+Belgida ko'rsatilganidan yuqori tezlikda harakatlanishni taqiqlaydi.
+Faqat belgilangan yoki undan yuqori tezlikda harakatlanish imkonini beradi.
+Yo'lning ushbu qismida haydash tavsiya etilgan tezlikni ko'rsatadi.
+
+
+1
+Faqat belgilangan yoki undan yuqori tezlikda harakatlanish imkonini beradi.

@@ -1,0 +1,8 @@
+Ushbu belgi bilan harakatga ruxsat beriladi:
+Barcha transport vositalarining haydovchilari.
+Faqat mashina haydovchisi uchun.
+Faqat avtomobil va mototsikl haydovchilari.
+Faqat avtomobil va avtobus haydovchilari uchun.
+
+1
+Barcha transport vositalarining haydovchilari.

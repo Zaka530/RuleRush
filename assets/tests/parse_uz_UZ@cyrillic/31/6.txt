@@ -1,0 +1,8 @@
+Avtomobillar chorrahadan quyidagi tartibda o‘tadi:
+Moviy; qizil; yashil.
+Yashil; ko'k; qizil.
+Yashil bilan bir vaqtda ko'k; qizil.
+
+
+1
+Moviy; qizil; yashil.

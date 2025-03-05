@@ -1,0 +1,8 @@
+Yo'lni almashtirishdan oldin ogohlantirish signalini qachon berish kerak?
+Manevr boshlangandan so'ng darhol.
+Manevrdan oldin.
+Manevr boshlanishidan darhol.
+
+
+0
+Manevrdan oldin.

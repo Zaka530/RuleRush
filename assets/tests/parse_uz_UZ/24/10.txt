@@ -1,0 +1,8 @@
+Qaysi yo'l belgisini sariq chiziq bilan belgilash mumkin?
+"To'xtash taqiqlangan."
+"To'xtab turish taqiqlangan".
+"Oyning toq kunlarida mashinalar to'xtash taqiqlanadi."
+
+
+1
+"To'xtab turish taqiqlangan".

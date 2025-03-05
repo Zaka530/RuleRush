@@ -1,0 +1,8 @@
+Ushbu yo'l belgisi quyidagilarni bildiradi:
+Qo'shimcha tepalikka chiqish chizig'i yoki tezlashtirish chizig'ining oxiri.
+O'tish joyi bo'lmagan yo'l.
+Aholi punktidagi ob'ektga harakat yo'nalishi.
+
+
+1
+O'tish joyi bo'lmagan yo'l.

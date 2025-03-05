@@ -1,0 +1,8 @@
+Avtomobillar chorrahadan qanday tartibda o‘tadi?
+Tramvay 2; ko'k mashina; tramvay 1; qizil mashina.
+2-tramvay 1-tramvay bilan bir vaqtda; ko'k mashina qizil bilan bir vaqtda.
+
+
+
+1
+Tramvay 2; ko'k mashina; tramvay 1; qizil mashina.

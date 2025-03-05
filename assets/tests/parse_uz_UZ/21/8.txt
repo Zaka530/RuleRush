@@ -1,0 +1,8 @@
+Avtomobillar chorrahadan quyidagi tartibda o‘tadi:
+Mototsikl, avtomobil, tramvay.
+Tramvay, mototsikl, avtomobil.
+Tramvay, avtomobil, mototsikl.
+
+
+1
+Mototsikl, avtomobil, tramvay.

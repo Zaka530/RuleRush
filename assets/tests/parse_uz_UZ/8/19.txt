@@ -1,0 +1,8 @@
+Qaysi transport vositasining haydovchisi aylanma aylanaga to'g'ri kiradi?
+Faqat avtobus haydovchisi.
+Faqat yengil avtomobil haydovchisi.
+Har ikki haydovchi.
+
+
+1
+Har ikki haydovchi.

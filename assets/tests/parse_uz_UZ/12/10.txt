@@ -1,0 +1,8 @@
+Qaysi javobda harakatlanishi mumkin bo'lgan barcha transport vositalari to'g'ri nomlanadi?
+Avtomobil va mototsikl.
+Barcha transport vositalari.
+Avtomobillar va tramvaylar.
+
+
+1
+Avtomobil va mototsikl.

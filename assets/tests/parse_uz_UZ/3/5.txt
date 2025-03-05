@@ -1,0 +1,8 @@
+Qo'lingiz shikastlangan bo'lsa, qanday qilib kiyimni to'g'ri kiyish kerak?
+Kiyimlar bir vaqtning o'zida ikkala qo'lga kiyiladi.
+Kiyimlar avval sog'lom qo'lga, keyin esa yaradorga qo'yiladi.
+Kiyimlar avval yarador qo'lga, keyin esa sog'lom qo'lga kiyiladi.
+
+
+0
+Kiyimlar avval yarador qo'lga, keyin esa sog'lom qo'lga kiyiladi.

@@ -1,0 +1,8 @@
+Yo'l harakati boshqaruvchisining hushtak signali:
+Agar kerak bo'lsa, "qo'l ko'tarilgan" signalini almashtirish uchun.
+Piyodalar uchun ruxsat beruvchi signal.
+Yo'l harakati ishtirokchilarining e'tiborini jalb qilish.
+
+
+0
+Yo'l harakati ishtirokchilarining e'tiborini jalb qilish.

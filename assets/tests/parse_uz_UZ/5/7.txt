@@ -1,0 +1,8 @@
+Yo'l harakati boshqaruvchisining ushbu signali quyidagilarni anglatadi:
+Moviy, qizil va yashil rangli mashinalar harakatlanishi mumkin. Sariq va oq ranglar taqiqlanadi.
+Moviy va yashil rangli mashinalarni haydashga ruxsat beriladi. Qizil, sariq, oq ranglar taqiqlanadi.
+
+
+
+1
+Moviy, qizil va yashil rangli mashinalar harakatlanishi mumkin. Sariq va oq ranglar taqiqlanadi.

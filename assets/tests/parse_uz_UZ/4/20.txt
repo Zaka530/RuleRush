@@ -1,0 +1,8 @@
+Qanday transport vositalarini to'xtashga ruxsat beriladi?
+Faqat yengil avtomobil.
+Barcha transport vositalari.
+Yengil avtomobil va mototsikl.
+Faqat yuk mashinasi uchun.
+Faqat mototsikl uchun.
+1
+Yengil avtomobil va mototsikl.

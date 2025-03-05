@@ -1,0 +1,8 @@
+Yashil mashina haydovchisi:
+Xuddi shu yo'nalishda bir xil yo'nalishda harakatlanadigan ko'k mashinaga yo'l berish kerak.
+Burilish signalini yoqish afzalligi bor.
+Ko'k rangli mashinadan ustunlikka ega, chunki u bosib o'tish uchun mo'ljallangan bo'lakda harakatlanadi.
+
+
+1
+Xuddi shu yo'nalishda bir xil yo'nalishda harakatlanadigan ko'k mashinaga yo'l berish kerak.

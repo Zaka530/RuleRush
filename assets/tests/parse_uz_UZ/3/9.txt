@@ -1,0 +1,8 @@
+Qaysi yo'nalishlarda harakatga ruxsat beriladi?
+A, B, C va D.
+A va B.
+A, B va C.
+Faqat A.
+Faqat B.
+1
+A va B.

@@ -1,0 +1,8 @@
+Qaysi javobda sayohat tartibi to‘g‘ri ko‘rsatilgan?
+Avtobus, mototsikl, yuk mashinasi.
+Avtobus, yuk mashinasi, mototsikl.
+Mototsikl, avtobus, yuk mashinasi.
+
+
+1
+Mototsikl, avtobus, yuk mashinasi.

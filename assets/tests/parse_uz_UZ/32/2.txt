@@ -1,0 +1,8 @@
+Qaysi avtomashina haydovchilari aholi punktlarida harakatlanishda qoidalarni buzadi?
+Faqat “B” rusumli avtomashina haydovchisi
+Ikkalasi ham buzmoqda.
+Ikkalasi ham buzmaydi.
+
+
+1
+Ikkalasi ham buzmaydi.

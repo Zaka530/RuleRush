@@ -1,0 +1,8 @@
+Poezdni to'xtatish signali:
+Tayoq yoki qizil bayroq bilan boshning tepasida ko'tarilgan qo'l.
+Qo'l oldinga cho'zilgan.
+Qo'lingizni oldinga cho'zgan holda yuqoriga va pastga silkitish.
+Qo'lning dumaloq harakati (kunduzi yorqin material yoki biron bir aniq ko'rinadigan narsa bilan, kechasi mash'al yoki chiroq bilan).
+
+0
+Qo'lning dumaloq harakati (kunduzi yorqin material yoki biron bir aniq ko'rinadigan narsa bilan, kechasi mash'al yoki chiroq bilan).

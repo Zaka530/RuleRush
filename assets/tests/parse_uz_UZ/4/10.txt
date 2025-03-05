@@ -1,0 +1,8 @@
+Aholi punktlarida avtobus yoki trolleybus haydovchisi belgilangan bekatdan harakatlana boshlaydi. U qarzdor:
+Ular yo'l berayotganiga ishonch hosil qilgandan keyingina harakatni boshlang.
+Foydadan foydalanib, mo'ljallangan yo'nalishda harakat qilishni boshlang.
+Uning yonidan o'tayotgan mashinaga yo'l bering.
+
+
+0
+Ular yo'l berayotganiga ishonch hosil qilgandan keyingina harakatni boshlang.

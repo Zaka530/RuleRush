@@ -1,0 +1,8 @@
+Avtomobillar chorrahadan quyidagi tartibda o‘tadi:
+Sariq, yashil, ko'k.
+Moviy, sariq va yashil.
+Yashil bilan ko'k, sariq.
+
+
+1
+Yashil bilan ko'k, sariq.

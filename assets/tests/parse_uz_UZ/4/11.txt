@@ -1,0 +1,8 @@
+Ushbu identifikatsiya belgisi quyidagi transport vositalarini bildiradi:
+Nogironlar tomonidan boshqariladi.
+Kar yoki kar-soqov haydovchilar tomonidan boshqariladi.
+Xavfli yuklarni tashish.
+
+
+1
+Nogironlar tomonidan boshqariladi.

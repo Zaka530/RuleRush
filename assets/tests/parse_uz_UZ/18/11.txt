@@ -1,0 +1,8 @@
+Avtotransportda tungi vaqtda yo'llarning yoritilmagan qismlarida harakatlanayotganda quyidagilar yoqilishi kerak:
+Uzoq yoki past nurli faralar.
+Faqat uzoq nurli faralar.
+Faqat past nurli faralar.
+
+
+0
+Uzoq yoki past nurli faralar.

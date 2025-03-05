@@ -1,0 +1,8 @@
+Qaysi javob chorrahadan o‘tish tartibini to‘g‘ri ko‘rsatadi?
+Velosiped, avtobus, mashina.
+Avtobus, mashina, velosiped.
+Avtomobil, avtobus, velosiped.
+
+
+1
+Velosiped, avtobus, mashina.

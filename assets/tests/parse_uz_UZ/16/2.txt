@@ -1,0 +1,8 @@
+Yo'nalishli transport vositalariga quyidagilar kiradi:
+Avtobuslar va mikroavtobuslar.
+Tramvay va trolleybuslar.
+Belgilangan marshrutlar bo'ylab harakatlanadigan avtobuslar, trolleybuslar, tramvaylar va mikroavtobuslar.
+
+
+0
+Belgilangan marshrutlar bo'ylab harakatlanadigan avtobuslar, trolleybuslar, tramvaylar va mikroavtobuslar.

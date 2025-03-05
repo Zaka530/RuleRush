@@ -1,0 +1,8 @@
+N2 toifali avtotransport vositalari kuzovining orqa devorida; N3; O3; O4; M2; M3 (ayniqsa kichiklaridan tashqari) qo'llanilishi kerak:
+Identifikatsiya va davlat raqami.
+Aniq ko'rinadigan davlat raqami.
+Avtomobil identifikatsiya belgisi.
+
+
+0
+Aniq ko'rinadigan davlat raqami.

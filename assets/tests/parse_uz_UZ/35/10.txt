@@ -1,0 +1,8 @@
+Belgi ostidagi belgi nimani bildiradi?
+Belgidan yo'lning tor qismigacha bo'lgan masofa.
+Yo'lning tor qismining uzunligi.
+Yo'lning tor qismini aylanib o'tish uchun masofa.
+
+
+1
+Belgidan yo'lning tor qismigacha bo'lgan masofa.

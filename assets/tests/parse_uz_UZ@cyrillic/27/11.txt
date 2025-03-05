@@ -1,0 +1,8 @@
+Avtomobillar chorrahadan quyidagi tartibda o‘tadi:
+Yashil; qizil bilan bir vaqtning o'zida ko'k; sariq.
+Sariq chorrahaga kiradi va ko'k o'tishi uchun to'xtaydi; yashil; qizil bilan bir vaqtning o'zida ko'k; sariq.
+Qizil bilan bir vaqtda ko'k; yashil; sariq.
+
+
+1
+Sariq chorrahaga kiradi va ko'k o'tishi uchun to'xtaydi; yashil; qizil bilan bir vaqtning o'zida ko'k; sariq.

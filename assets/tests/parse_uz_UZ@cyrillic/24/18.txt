@@ -1,0 +1,8 @@
+Avtomobillar chorrahadan quyidagi tartibda o‘tadi:
+Ko'k rang qizilni o'tishiga imkon beradi, keyin yashil mashina burilishni tugatadi.
+Qizil, ko'k, yashil mashinalar.
+Moviy, yashil, qizil mashinalar.
+Yashil, qizil, ko'k mashinalar.
+
+1
+Moviy, yashil, qizil mashinalar.

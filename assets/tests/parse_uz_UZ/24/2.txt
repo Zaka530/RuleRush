@@ -1,0 +1,8 @@
+Harakatning afzalliklari quyidagilardan iborat:
+Moviy mashina, qizil rang esa chapga yo'nalishni o'zgartiradi.
+Mashina qizil, chunki polosani o'zgartirganda u o'ng tomonda.
+Moviy mashina, chunki polosani o'zgartirganda u chap tomonda.
+
+
+1
+Mashina qizil, chunki polosani o'zgartirganda u o'ng tomonda.

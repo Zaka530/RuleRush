@@ -1,0 +1,8 @@
+Ushbu yo'l belgilari nimani anglatadi?
+Avtobuslar va trolleybuslarning harakatlanishi uchun mo'ljallangan qatorni belgilaydi.
+Avtobuslar va mikroavtobuslarning harakatlanishi uchun mo'ljallangan qatorni belgilaydi.
+Faqat avtobus uchun yo'lakni belgilaydi.
+Faqat marshrut vositalarining harakatlanishi uchun mo'ljallangan bo'lakni belgilaydi.
+
+1
+Faqat marshrut vositalarining harakatlanishi uchun mo'ljallangan bo'lakni belgilaydi.

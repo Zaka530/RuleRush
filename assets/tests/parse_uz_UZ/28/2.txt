@@ -1,0 +1,8 @@
+Ushbu belgi qaysi yo'l belgisi bilan ishlatiladi?
+Barcha sanab o'tilgan belgilar bilan.
+"To'xtamasdan to'xtash mumkin emas" belgisi bilan.
+"Yo'l bering" belgisi bilan.
+"Ekvivalent yo'llarni kesib o'tish" ogohlantirish belgisi bilan.
+
+1
+"Yo'l bering" belgisi bilan.

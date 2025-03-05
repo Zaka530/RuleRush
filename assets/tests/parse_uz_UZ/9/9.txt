@@ -1,0 +1,8 @@
+Chorrahadan o'tish tartibini belgilang:
+Qizil, ko'k, yashil.
+Yashil, ko'k bilan bir vaqtning o'zida qizil.
+Yashil bilan bir vaqtning o'zida ko'k, qizil.
+
+
+1
+Yashil, ko'k bilan bir vaqtning o'zida qizil.

@@ -1,0 +1,8 @@
+Tegishli belgilar bilan ko'rsatilgan yon bag'irlarida qarama-qarshi harakat qiyin bo'lsa, siz yo'l berishingiz kerak:
+Tepaga ko'tarilayotgan mashina.
+Pastga tushayotgan mashina.
+Yo'nalishli transport vositasi.
+
+
+1
+Tepaga ko'tarilayotgan mashina.

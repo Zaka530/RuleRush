@@ -1,0 +1,8 @@
+Chorrahada aylanma yo‘l bor. Chorrahaga yaqinlashadigan yo'l ikki qatorga ega. Chorrahaga kirganingizda burilish uchun qaysi qatorga o'tishingiz kerak?
+O'ng yoki chap chiziq.
+O'ng tomondagi qator.
+Chap qator.
+
+
+0
+O'ng yoki chap chiziq.

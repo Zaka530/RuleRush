@@ -1,0 +1,8 @@
+Avtomobil haydovchisi qaysi yo'nalishda to'g'ri o'tib ketadi?
+"B" yo'nalishi bo'yicha.
+"A" yo'nalishi bo'yicha.
+"A" va "B" yo'nalishlarida.
+Yuqoridagi barcha amallarni bajaring.
+
+1
+"B" yo'nalishi bo'yicha.

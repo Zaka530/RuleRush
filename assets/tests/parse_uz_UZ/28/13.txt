@@ -1,0 +1,8 @@
+Ushbu belgidagi ko'k fondagi joy nomi yozilgan qo'shimcha nimani anglatadi?
+Belgilangan ob'ekt ushbu hududda joylashgan.
+Belgilangan aholi punktigacha harakatlanish avtomobil yo‘li bo‘ylab amalga oshiriladi.
+Ushbu ob'ekt ushbu aholi punktidan tashqarida joylashgan va unga avtomagistral bo'ylab harakatlanmaydi.
+
+
+1
+Ushbu ob'ekt ushbu aholi punktidan tashqarida joylashgan va unga avtomagistral bo'ylab harakatlanmaydi.

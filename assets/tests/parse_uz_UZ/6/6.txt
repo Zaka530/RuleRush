@@ -1,0 +1,8 @@
+Yo'lsiz transport vositalari uchun qatorlar soni qanday aniqlanadi?
+Haydovchining o'zi tomonidan yo'lning kengligi, transport vositalarining o'lchamlari va ular orasidagi kerakli intervallarni hisobga olgan holda.
+Yo'l belgilari "Line yo'nalishlari" yoki "Line yo'nalishi".
+Yuqoridagi barcha usullarda.
+Yo'l belgilari.
+
+0
+Yuqoridagi barcha usullarda.

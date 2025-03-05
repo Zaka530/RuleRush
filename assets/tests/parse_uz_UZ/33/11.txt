@@ -1,0 +1,8 @@
+Qaysi haydovchi yo'lovchilarni tushirish uchun to'g'ri to'xtadi?
+Barcha haydovchilar.
+Faqat ko'k mashinaning haydovchisi.
+Mototsikl va ko'k mashina haydovchilari.
+Ko'k va qizil avtomobil haydovchilari.
+
+1
+Mototsikl va ko'k mashina haydovchilari.

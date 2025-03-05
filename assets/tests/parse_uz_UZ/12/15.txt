@@ -1,0 +1,8 @@
+Orqa g'ildirakli avtomobil uchun sirpanchiq yo'lda dvigatel tormozlanishidan foydalanish:
+Avtomobil barqarorligiga hech qanday ta'sir ko'rsatmaydi.
+Avtomobil barqarorligini oshiradi.
+Avtomobil barqarorligini pasaytiradi.
+
+
+0
+Avtomobil barqarorligini oshiradi.

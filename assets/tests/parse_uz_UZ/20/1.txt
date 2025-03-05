@@ -1,0 +1,8 @@
+Avtomobillar chorrahadan quyidagi tartibda o‘tadi:
+Moviy mashina, tramvay, qizil mashina.
+Tramvay, ko'k mashina chorrahaga kiradi, qizili o'tib ketsin va burilishni yakunlang.
+Tramvay, qizil, keyin ko'k mashina.
+
+
+1
+Tramvay, qizil, keyin ko'k mashina.

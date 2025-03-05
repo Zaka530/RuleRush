@@ -1,0 +1,8 @@
+Siz uch qatorli ikki tomonlama yo'lda ketyapsiz. Qanday hollarda o'rta bo'lakka chiqishga ruxsat beriladi?
+Faqat bosib o'tish uchun.
+Faqat aylanma maqsadlar uchun.
+Faqat chapga burilish yoki burilish uchun.
+Yuqoridagi barcha holatlarda.
+
+0
+Yuqoridagi barcha holatlarda.

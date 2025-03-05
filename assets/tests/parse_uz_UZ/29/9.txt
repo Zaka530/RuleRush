@@ -1,0 +1,8 @@
+Yo'l poezdi belgisi quyidagilarni o'z ichiga olishi kerak:
+Kechasi yoki yomon ko'rish sharoitida haydashda.
+Yo'l poezdi harakatlanayotganda, shuningdek, qorong'ida to'xtab, to'xtab qolganda.
+Faqat avtopoyezd harakatlanayotganda.
+Faqat poezdni yuk bilan harakatlantirganda.
+
+0
+Yo'l poezdi harakatlanayotganda, shuningdek, qorong'ida to'xtab, to'xtab qolganda.
