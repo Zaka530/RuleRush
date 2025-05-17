@@ -10,9 +10,10 @@ abstract class TestEvent extends Equatable {
 class LoadTests extends TestEvent {
   final String language;
   final int templateNumber;
+  final bool fromRandomTest;
 
-  const LoadTests(this.language, this.templateNumber);
+  const LoadTests(this.language, this.templateNumber, {this.fromRandomTest = false});
 
   @override
-  List<Object> get props => [language, templateNumber];
+  List<Object> get props => [language, templateNumber, fromRandomTest];
 }

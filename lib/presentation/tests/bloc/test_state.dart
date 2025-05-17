@@ -9,13 +9,15 @@ abstract class TestState extends Equatable {
 
 class TestLoading extends TestState {}
 
+
 class TestLoaded extends TestState {
   final List<TestModel> tests;
+  final bool fromRandomTest;
 
-  const TestLoaded(this.tests);
+  const TestLoaded(this.tests, {this.fromRandomTest = false});
 
   @override
-  List<Object> get props => [tests];
+  List<Object> get props => [tests, fromRandomTest];
 }
 
 class TestError extends TestState {

@@ -18,12 +18,12 @@ class TestBloc extends Bloc<TestEvent, TestState> {
       List<TestModel> tests = await TestRepository.loadTests(event.language, event.templateNumber);
 
       if (tests.isNotEmpty) {
-        emit(TestLoaded(tests));
+        emit(TestLoaded(tests, fromRandomTest: event.fromRandomTest));
       } else {
         emit(TestError("Не удалось загрузить тесты. Возможно, файлы отсутствуют."));
       }
     } catch (e) {
-      emit(TestError("Ошибка загрузки тестов: ${e.toString()}"));
+      emit(TestError("Ошибка загрузки тестов: \${e.toString()}"));
     }
   }
 }

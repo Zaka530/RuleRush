@@ -3,16 +3,26 @@ class TestModel {
   final List<String> options;
   final String correctAnswer;
   final String? imagePath; // Теперь картинка необязательна
+  final int imageTemplateNumber;
+  final int imageNumber;
 
   TestModel({
     required this.question,
     required this.options,
     required this.correctAnswer,
     this.imagePath,
+    required this.imageTemplateNumber,
+    required this.imageNumber,
   });
 
   /// Фабричный метод создания модели из файла
-  factory TestModel.fromFileContent(List<String> lines, String imageFolderPath, int questionIndex) {
+  factory TestModel.fromFileContent(
+    List<String> lines,
+    String imageFolderPath,
+    int questionIndex,
+    int imageTemplateNumber,
+    int imageNumber,
+  ) {
     if (lines.length < 3) {
       throw Exception("Некорректный формат файла: минимум 3 строки (вопрос, ответы, правильный ответ)");
     }
@@ -28,7 +38,7 @@ class TestModel {
 
     String? imagePath;
     if (hasImage == 1) {
-      imagePath = "$imageFolderPath/$questionIndex.jpeg"; // Формируем путь к изображению
+      imagePath = "$imageFolderPath$questionIndex.jpeg"; // Формируем путь к изображению
     }
 
     return TestModel(
@@ -36,6 +46,8 @@ class TestModel {
       options: options,
       correctAnswer: correctAnswer,
       imagePath: imagePath,
+      imageTemplateNumber: imageTemplateNumber,
+      imageNumber: imageNumber,
     );
   }
 }

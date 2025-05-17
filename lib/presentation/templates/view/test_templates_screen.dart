@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../settings/view/settings_screen.dart';
+
 class TestTemplatesScreen extends StatelessWidget {
   final String language; // Динамический язык (по умолчанию ru_RU)
 
@@ -18,7 +20,7 @@ class TestTemplatesScreen extends StatelessWidget {
         ),
         centerTitle: true,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
+          icon: const Icon(Icons.arrow_back_ios_new),
           onPressed: () {
             if (GoRouter.of(context).canPop()) {
               context.pop();
@@ -49,13 +51,14 @@ class TestTemplatesScreen extends StatelessWidget {
   Widget _buildTestCard(BuildContext context, int number) {
     return InkWell(
       onTap: () {
-        context.push('/tests/$language/$number'); // Открываем тест с правильным языком
+        print('Открываем тест $number на языке: $selectedLanguage');
+        context.push('/tests/$selectedLanguage/$number'); // Открываем тест с правильным языком
       },
       borderRadius: BorderRadius.circular(16),
       child: AnimatedContainer(
         duration: const Duration(milliseconds: 200),
         decoration: BoxDecoration(
-          color: Colors.grey.shade100,
+          color: Theme.of(context).colorScheme.surfaceVariant,
           borderRadius: BorderRadius.circular(16),
           boxShadow: [
             BoxShadow(
@@ -72,7 +75,7 @@ class TestTemplatesScreen extends StatelessWidget {
             style: TextStyle(
               fontSize: 24, // Увеличен шрифт
               fontWeight: FontWeight.bold,
-              color: Colors.green.shade600,
+              color: Theme.of(context).colorScheme.primary,
             ),
           ),
         ),

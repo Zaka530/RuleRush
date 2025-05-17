@@ -5,6 +5,9 @@ import 'package:lucide_icons_flutter/lucide_icons.dart';
 
 import '../bloc/home_bloc.dart';
 
+final ValueNotifier<String> _languageNotifier = ValueNotifier<String>('ru_RU');
+String get selectedLanguage => _languageNotifier.value;
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
@@ -35,7 +38,7 @@ class HomeScreen extends StatelessWidget {
                       title: "Шаблоны тестов",
                       icon: LucideIcons.squareCheck, // Заменено
                       color: Colors.blueAccent,
-                      onTap: () {context.go('/test_templates');
+                      onTap: () {context.push('/test_templates');
                       },
                     ),
                     const SizedBox(height: 16),
@@ -44,7 +47,20 @@ class HomeScreen extends StatelessWidget {
                       title: "Случайные вопросы",
                       icon: LucideIcons.info, // Используем info вместо helpCircle
                       color: Colors.orangeAccent,
-                      onTap: () {},
+                      onTap: () {
+                        final randomTemplate = (List.generate(35, (index) => index + 1)..shuffle()).first;
+                        context.pushNamed(
+                          'tests',
+                          pathParameters: {
+                            'language': selectedLanguage,
+                            'templateNumber': randomTemplate.toString(),
+                          },
+                          queryParameters: {
+                            'source': 'random',
+                            'language': selectedLanguage,
+                          },
+                        );
+                      },
                     ),
                     const SizedBox(height: 16),
                     _buildSectionCard(
@@ -52,7 +68,20 @@ class HomeScreen extends StatelessWidget {
                       title: "Марафон",
                       icon: LucideIcons.flag, // Заменено
                       color: Colors.greenAccent,
-                      onTap: () {},
+                      onTap: () {
+                        print('Открываем тест на языке: $selectedLanguage');
+
+                        context.pushNamed(
+                          'marathon',
+                          pathParameters: {
+                            'language': selectedLanguage,
+                          },
+                          queryParameters: {
+                            'language': selectedLanguage,
+                            'source': 'marathon',
+                          },
+                        );
+                      },
                     ),
                   ],
                 ),

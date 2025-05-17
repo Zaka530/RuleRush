@@ -2,7 +2,6 @@ O'qlar bilan ko'rsatilgan yo'nalishlardan qaysi yo'nalishlarda harakatlanishga r
 Faqat B yo'nalishida.
 Faqat A va D yo'nalishlarida.
 Faqat A yo'nalishi bo'yicha.
-Faqat B yo'nalishida.
 Faqat G yo'nalishi bo'yicha.
 1
 Faqat A va D yo'nalishlarida.
