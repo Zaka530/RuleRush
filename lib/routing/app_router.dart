@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 import '../bottom_navigation/view/bottom_navigation.dart';
 import '../presentation/home/view/home_screen.dart';
@@ -34,10 +35,13 @@ class AppRouter {
         builder: (context, state) => const TestTemplatesScreen(),
       ),
       GoRoute(
-        path: '/tests/:language/:templateNumber',
+        path: '/tests/:templateNumber',
         name: 'tests',
         builder: (context, state) {
-          final language = state.pathParameters['language'] ?? 'ru_RU';
+          final locale = context.locale;
+          final language = (locale.languageCode == 'uz' && locale.countryCode == 'UZ_CYR')
+              ? 'uz_UZ@cyrillic'
+              : '${locale.languageCode}_${locale.countryCode}';
           final templateNumber = int.tryParse(state.pathParameters['templateNumber'] ?? '1') ?? 1;
 
           final fromRandomTest = state.uri.queryParameters['source'] == 'random';
@@ -53,20 +57,18 @@ class AppRouter {
         },
       ),
       GoRoute(
-        path: '/random/:language',
+        path: '/random',
         name: 'random',
         builder: (context, state) {
-          final language = state.pathParameters['language'] ?? 'ru_RU';
+          final templateNumber = (List.generate(35, (index) => index + 1)..shuffle()).first;
 
-          print('⚡️ Перешли в random route с языком: $language');
+          print('⚡️ Переход в random с языком: ${context.locale}');
 
           Future.microtask(() {
-            print('➡️ Выполняем переход в tests с source=random');
             context.goNamed(
               'tests',
               pathParameters: {
-                'language': language,
-                'templateNumber': (List.generate(35, (index) => index + 1)..shuffle()).first.toString(),
+                'templateNumber': templateNumber.toString(),
               },
               queryParameters: {
                 'source': 'random',
@@ -80,10 +82,13 @@ class AppRouter {
         },
       ),
       GoRoute(
-        path: '/marathon/:language',
+        path: '/marathon',
         name: 'marathon',
         builder: (context, state) {
-          final language = state.pathParameters['language'] ?? 'ru_RU';
+          final locale = context.locale;
+          final language = (locale.languageCode == 'uz' && locale.countryCode == 'UZ_CYR')
+              ? 'uz_UZ@cyrillic'
+              : '${locale.languageCode}_${locale.countryCode}';
           return MarathonScreen(language: language);
         },
       ),

@@ -1,9 +1,6 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import '../../../main.dart';
-import '../../../storage/settings_storage.dart';
-
-final ValueNotifier<String> _languageNotifier = ValueNotifier<String>('ru_RU');
-String get selectedLanguage => _languageNotifier.value;
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({super.key});
@@ -31,9 +28,10 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
                   ),
                   const SizedBox(height: 12),
-                  ValueListenableBuilder<String>(
-                    valueListenable: _languageNotifier,
-                    builder: (context, currentLanguage, _) {
+                  Builder(
+                    builder: (context) {
+                      final locale = context.locale;
+                      final currentLanguage = '${locale.languageCode}_${locale.countryCode}';
                       return Column(
                         children: [
                           _buildLanguageTile(context, 'Русский', 'ru_RU', currentLanguage),
@@ -72,8 +70,13 @@ Widget _buildLanguageTile(BuildContext context, String label, String value, Stri
   final isSelected = value == selectedValue;
   return InkWell(
     onTap: () async {
-      _languageNotifier.value = value;
-      await SettingsStorage.saveLanguage(value);
+      final locale = switch (value) {
+        'ru_RU' => const Locale('ru', 'RU'),
+        'uz_UZ' => const Locale('uz', 'UZ'),
+        'uz_UZ@cyrillic' => const Locale('uz', 'UZ_CYR'),
+        _ => const Locale('ru', 'RU'),
+      };
+      context.setLocale(locale);
       print('Выбран язык: $value');
     },
     borderRadius: BorderRadius.circular(12),

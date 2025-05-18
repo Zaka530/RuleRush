@@ -1,12 +1,11 @@
+// Removed erroneous import of easy_localization as test_templates
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:lucide_icons_flutter/lucide_icons.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 import '../bloc/home_bloc.dart';
-
-final ValueNotifier<String> _languageNotifier = ValueNotifier<String>('ru_RU');
-String get selectedLanguage => _languageNotifier.value;
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -35,7 +34,7 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     _buildSectionCard(
                       context,
-                      title: "Шаблоны тестов",
+                      title: "Test_templates".tr(),
                       icon: LucideIcons.squareCheck, // Заменено
                       color: Colors.blueAccent,
                       onTap: () {context.push('/test_templates');
@@ -44,7 +43,7 @@ class HomeScreen extends StatelessWidget {
                     const SizedBox(height: 16),
                     _buildSectionCard(
                       context,
-                      title: "Случайные вопросы",
+                      title: "Random_questions".tr(),
                       icon: LucideIcons.info, // Используем info вместо helpCircle
                       color: Colors.orangeAccent,
                       onTap: () {
@@ -52,12 +51,10 @@ class HomeScreen extends StatelessWidget {
                         context.pushNamed(
                           'tests',
                           pathParameters: {
-                            'language': selectedLanguage,
                             'templateNumber': randomTemplate.toString(),
                           },
                           queryParameters: {
                             'source': 'random',
-                            'language': selectedLanguage,
                           },
                         );
                       },
@@ -65,19 +62,15 @@ class HomeScreen extends StatelessWidget {
                     const SizedBox(height: 16),
                     _buildSectionCard(
                       context,
-                      title: "Марафон",
+                      title: "Marathon".tr(),
                       icon: LucideIcons.flag, // Заменено
                       color: Colors.greenAccent,
                       onTap: () {
-                        print('Открываем тест на языке: $selectedLanguage');
+                        print('Открываем тест на языке: ${context.locale.toString()}');
 
                         context.pushNamed(
                           'marathon',
-                          pathParameters: {
-                            'language': selectedLanguage,
-                          },
                           queryParameters: {
-                            'language': selectedLanguage,
                             'source': 'marathon',
                           },
                         );

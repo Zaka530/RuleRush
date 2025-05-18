@@ -9,14 +9,15 @@ import '../bloc/marathon_state.dart';
 import '../../tests/view/test_screen.dart';
 
 class MarathonScreen extends StatelessWidget {
-  const MarathonScreen({super.key, required String language});
+  final String language;
+  const MarathonScreen({super.key, required this.language});
 
   @override
   Widget build(BuildContext context) {
-    final language = GoRouterState.of(context).uri.queryParameters['language'] ?? 'ru_RU';
+    final lang = language;
 
     return BlocProvider(
-      create: (_) => MarathonBloc()..add(LoadMarathon(language)),
+      create: (_) => MarathonBloc()..add(LoadMarathon(lang)),
       child: BlocBuilder<MarathonBloc, MarathonState>(
         builder: (context, state) {
           if (state is MarathonLoading) {
@@ -25,7 +26,7 @@ class MarathonScreen extends StatelessWidget {
             );
           } else if (state is MarathonLoaded) {
             return TestScreen(
-              language: language,
+              language: lang,
               templateNumber: 1,
               preloadedTests: state.tests,
               totalQuestionsOverride: state.tests.length,

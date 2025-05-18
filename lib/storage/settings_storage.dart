@@ -2,19 +2,8 @@ import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter/material.dart';
 
 class SettingsStorage {
-  static const _languageKey = 'selected_language';
   static const _themeKey = 'is_dark_theme';
   static const _fromRandomTestKey = 'from_random_test';
-
-  static Future<void> saveLanguage(String languageCode) async {
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setString(_languageKey, languageCode);
-  }
-
-  static Future<String?> loadLanguage() async {
-    final prefs = await SharedPreferences.getInstance();
-    return prefs.getString(_languageKey);
-  }
 
   static Future<void> saveThemeMode(ThemeMode mode) async {
     final prefs = await SharedPreferences.getInstance();

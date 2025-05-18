@@ -12,6 +12,8 @@ dependencies:
   flutter:
     sdk: flutter
 
+
+
   shared_preferences: ^2.2.0
   cupertino_icons: ^1.0.8
   go_router: ^12.1.1
@@ -31,6 +33,15 @@ dev_dependencies:
 
 flutter:
   assets:
+    - assets/translations/
+    - assets/translations/ru-RU.json
+    - assets/translations/uz-UZ.json
+    - assets/translations/uz-UZ-CYR.json
+
+
+
+
+
     - assets/tests/parse_ru_RU/
     - assets/tests/parse_ru_RU/1/
     - assets/tests/parse_ru_RU/2/
@@ -88,6 +99,22 @@ flutter:
     - assets/tests/parse_uz_UZ/18/
     - assets/tests/parse_uz_UZ/19/
     - assets/tests/parse_uz_UZ/20/
+    - assets/tests/parse_uz_UZ/21/
+    - assets/tests/parse_uz_UZ/22/
+    - assets/tests/parse_uz_UZ/23/
+    - assets/tests/parse_uz_UZ/24/
+    - assets/tests/parse_uz_UZ/25/
+    - assets/tests/parse_uz_UZ/26/
+    - assets/tests/parse_uz_UZ/27/
+    - assets/tests/parse_uz_UZ/28/
+    - assets/tests/parse_uz_UZ/29/
+    - assets/tests/parse_uz_UZ/30/
+    - assets/tests/parse_uz_UZ/31/
+    - assets/tests/parse_uz_UZ/32/
+    - assets/tests/parse_uz_UZ/33/
+    - assets/tests/parse_uz_UZ/34/
+    - assets/tests/parse_uz_UZ/35/
+
     - assets/tests/parse_uz_UZ@cyrillic/
     - assets/tests/parse_uz_UZ@cyrillic/1/
     - assets/tests/parse_uz_UZ@cyrillic/2/
@@ -109,4 +136,24 @@ flutter:
     - assets/tests/parse_uz_UZ@cyrillic/18/
     - assets/tests/parse_uz_UZ@cyrillic/19/
     - assets/tests/parse_uz_UZ@cyrillic/20/
+    - assets/tests/parse_uz_UZ@cyrillic/21/
+    - assets/tests/parse_uz_UZ@cyrillic/22/
+    - assets/tests/parse_uz_UZ@cyrillic/23/
+    - assets/tests/parse_uz_UZ@cyrillic/24/
+    - assets/tests/parse_uz_UZ@cyrillic/25/
+    - assets/tests/parse_uz_UZ@cyrillic/26/
+    - assets/tests/parse_uz_UZ@cyrillic/27/
+    - assets/tests/parse_uz_UZ@cyrillic/28/
+    - assets/tests/parse_uz_UZ@cyrillic/29/
+    - assets/tests/parse_uz_UZ@cyrillic/30/
+    - assets/tests/parse_uz_UZ@cyrillic/31/
+    - assets/tests/parse_uz_UZ@cyrillic/32/
+    - assets/tests/parse_uz_UZ@cyrillic/33/
+    - assets/tests/parse_uz_UZ@cyrillic/34/
+    - assets/tests/parse_uz_UZ@cyrillic/35/
+
+
+
+
+
   uses-material-design: true

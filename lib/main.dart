@@ -1,3 +1,4 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:rule_rush/routing/app_router.dart';
@@ -8,12 +9,22 @@ final languageNotifier = ValueNotifier<String>('ru_RU');
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  await EasyLocalization.ensureInitialized();
   themeNotifier.value = await SettingsStorage.loadThemeMode();
   print('Загруженная тема: ${themeNotifier.value}');
-  languageNotifier.value = await SettingsStorage.loadLanguage() ?? 'ru_RU';
   runApp(
-    const ProviderScope(
-      child: MyApp(),
+    EasyLocalization(
+      supportedLocales: const [
+        Locale('ru', 'RU'),
+        Locale('uz', 'UZ'),
+        Locale.fromSubtags(languageCode: 'uz', countryCode: 'UZ_CYR'),
+      ],
+      path: 'assets/translations',
+      fallbackLocale: Locale('ru', 'RU'),
+      saveLocale: true,
+      child: const ProviderScope(
+        child: MyApp(),
+      ),
     ),
   );
 }
@@ -27,6 +38,9 @@ class MyApp extends StatelessWidget {
       valueListenable: themeNotifier,
       builder: (context, currentMode, _) {
         return MaterialApp.router(
+          locale: context.locale,
+          supportedLocales: context.supportedLocales,
+          localizationsDelegates: context.localizationDelegates,
           debugShowCheckedModeBanner: false,
           title: 'Rule Rush',
           theme: ThemeData(

@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:easy_localization/easy_localization.dart';
 
-import '../../settings/view/settings_screen.dart';
 
 class TestTemplatesScreen extends StatelessWidget {
-  final String language; // Динамический язык (по умолчанию ru_RU)
-
-  const TestTemplatesScreen({super.key, this.language = "ru_RU"});
+  const TestTemplatesScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,9 +12,9 @@ class TestTemplatesScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          "Шаблоны тестов",
-          style: TextStyle(fontWeight: FontWeight.bold),
+        title: Text(
+          'test_templates'.tr(),
+          style: const TextStyle(fontWeight: FontWeight.bold),
         ),
         centerTitle: true,
         leading: IconButton(
@@ -51,8 +49,16 @@ class TestTemplatesScreen extends StatelessWidget {
   Widget _buildTestCard(BuildContext context, int number) {
     return InkWell(
       onTap: () {
-        print('Открываем тест $number на языке: $selectedLanguage');
-        context.push('/tests/$selectedLanguage/$number'); // Открываем тест с правильным языком
+        print('Открываем тест $number');
+        context.goNamed(
+          'tests',
+          pathParameters: {
+            'templateNumber': number.toString(),
+          },
+          queryParameters: {
+            'source': 'templates',
+          },
+        );
       },
       borderRadius: BorderRadius.circular(16),
       child: AnimatedContainer(

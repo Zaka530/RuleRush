@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:easy_localization/easy_localization.dart';
 
 import '../../../storage/settings_storage.dart';
 
@@ -8,7 +9,10 @@ class RandomTestScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final language = GoRouterState.of(context).pathParameters['language'] ?? 'ru_RU';
+    final locale = context.locale;
+    final language = (locale.languageCode == 'uz' && locale.countryCode == 'UZ_CYR')
+        ? 'uz_UZ@cyrillic'
+        : '${locale.languageCode}_${locale.countryCode}';
     final int randomTemplate = (List.generate(35, (index) => index + 1)..shuffle()).first;
 
     WidgetsBinding.instance.addPostFrameCallback((_) async {
@@ -18,12 +22,10 @@ class RandomTestScreen extends StatelessWidget {
       context.goNamed(
         'tests',
         pathParameters: {
-          'language': language,
           'templateNumber': randomTemplate.toString(),
         },
         queryParameters: {
           'source': 'random',
-          'language': language,
         },
       );
     });

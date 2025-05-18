@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:go_router/go_router.dart';
+import 'package:easy_localization/easy_localization.dart';
 import '../bloc/results_bloc.dart';
 import '../bloc/results_event.dart';
 import '../bloc/results_state.dart';
@@ -32,18 +33,22 @@ class ResultsScreen extends StatelessWidget {
         )),
       child: Scaffold(
         appBar: AppBar(
-          title: const Text('Результаты', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
+          title: Text('results'.tr(), style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold)),
           centerTitle: true,
           leading: IconButton(
             icon: const Icon(Icons.arrow_back),
             onPressed: () {
               debugPrint('⬅️ Назад source = $source');
-              if (source == 'random') {
-                context.goNamed('home');
-              } else if (source == 'marathon') {
-                context.go('/marathon');
-              } else {
-                context.go('/test_templates');
+              switch (source) {
+                case 'random':
+                case 'marathon':
+                  context.goNamed('home');
+                  break;
+                case 'templates':
+                  context.go('/test_templates');
+                  break;
+                default:
+                  context.pop();
               }
             },
           ),
@@ -59,7 +64,7 @@ class ResultsScreen extends StatelessWidget {
                   children: [
                     const SizedBox(height: 10),
                     Text(
-                      'Ваши результаты',
+                      'your_results'.tr(),
                       style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                     ),
                     const SizedBox(height: 15),
@@ -79,15 +84,15 @@ class ResultsScreen extends StatelessWidget {
                       child: Column(
                         children: [
                           Text(
-                            'Правильных: ${state.correctAnswers}',
+                            '${'correct'.tr()}: ${state.correctAnswers}',
                             style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
                           ),
                           Text(
-                            'Неправильных: ${state.wrongAnswers}',
+                            '${'incorrect'.tr()}: ${state.wrongAnswers}',
                             style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w600, color: Colors.red),
                           ),
                           Text(
-                            'Всего вопросов: ${state.totalQuestions}',
+                            '${'total_questions'.tr()}: ${state.totalQuestions}',
                             style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w600, color: Colors.blueGrey),
                           ),
                         ],

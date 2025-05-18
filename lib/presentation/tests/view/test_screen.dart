@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:go_router/go_router.dart';
@@ -50,7 +51,11 @@ class _TestScreenState extends State<TestScreen> {
       // The bottom nav bar will be hidden by parent (see bottom_navigation.dart)
       return Scaffold(
         appBar: AppBar(
-          title: Text(widget.hideTemplateTitle ? "Марафон" : "Тест ${widget.templateNumber}"),
+          title: Text(
+            widget.hideTemplateTitle
+                ? 'marathon'.tr()
+                : '${'test'.tr()} ${widget.templateNumber}',
+          ),
           centerTitle: true,
           actions: [
             Padding(
@@ -105,7 +110,11 @@ class _TestScreenState extends State<TestScreen> {
           leading: IconButton(
             icon: const Icon(Icons.arrow_back),
             onPressed: () {
-              Navigator.pop(context);
+              if (GoRouter.of(context).canPop()) {
+                context.pop();
+              } else {
+                context.goNamed('home');
+              }
             },
           ),
         ),
@@ -179,7 +188,11 @@ class _TestScreenState extends State<TestScreen> {
         // The bottom nav bar will be hidden by parent (see bottom_navigation.dart)
         child: Scaffold(
           appBar: AppBar(
-            title: Text(widget.hideTemplateTitle ? "Марафон" : "Тест ${widget.templateNumber}"),
+            title: Text(
+              widget.hideTemplateTitle
+                  ? 'marathon'.tr()
+                  : '${'test'.tr()} ${widget.templateNumber}',
+            ),
             centerTitle: true,
             actions: [
               Padding(
@@ -234,7 +247,11 @@ class _TestScreenState extends State<TestScreen> {
             leading: IconButton(
               icon: const Icon(Icons.arrow_back),
               onPressed: () {
-                Navigator.pop(context);
+                if (GoRouter.of(context).canPop()) {
+                  context.pop();
+                } else {
+                  context.goNamed('home');
+                }
               },
             ),
           ),
@@ -320,6 +337,7 @@ class _TestScreenState extends State<TestScreen> {
 
   /// Виджет карточки теста с передачей fromRandomTest
   Widget _buildTestCardWithRandom(BuildContext context, TestModel test, int questionIndex, bool fromRandomTest) {
+    // Always use parse_ru_RU for imagePath, never widget.language
     final imagePath = 'assets/tests/parse_ru_RU/${widget.templateNumber}/${questionIndex + 1}.jpeg';
     return Padding(
       padding: const EdgeInsets.all(16.0),
