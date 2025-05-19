@@ -48,11 +48,14 @@ class AppRouter {
           print('🧪 query source = ${state.uri.queryParameters['source']}');
           print('🧪 fromRandomTest = $fromRandomTest');
 
+          final sourceScreen = state.extra as String?;
+
           return TestScreen(
             language: language,
             templateNumber: templateNumber,
             fromRandomTest: fromRandomTest,
             hideTemplateTitle: templateNumber == 0,
+            sourceScreen: sourceScreen,
           );
         },
       ),

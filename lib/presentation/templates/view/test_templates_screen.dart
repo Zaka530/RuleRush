@@ -58,6 +58,8 @@ class TestTemplatesScreen extends StatelessWidget {
           queryParameters: {
             'source': 'templates',
           },
+          extra: 'templates',
+
         );
       },
       borderRadius: BorderRadius.circular(16),

@@ -16,6 +16,7 @@ class TestScreen extends StatefulWidget {
   final bool hideTemplateTitle;
   final bool isMarathon;
   final bool fromRandomTest;
+  final String? sourceScreen;
 
   const TestScreen({
     super.key,
@@ -25,7 +26,8 @@ class TestScreen extends StatefulWidget {
     this.totalQuestionsOverride,
     this.hideTemplateTitle = false,
     this.isMarathon = false,
-    this.fromRandomTest=false,
+    this.fromRandomTest = false,
+    this.sourceScreen,
   });
 
   @override
@@ -110,8 +112,10 @@ class _TestScreenState extends State<TestScreen> {
           leading: IconButton(
             icon: const Icon(Icons.arrow_back),
             onPressed: () {
-              if (GoRouter.of(context).canPop()) {
-                context.pop();
+              if (widget.sourceScreen == 'templates') {
+                context.goNamed('test_templates');
+              } else if (widget.sourceScreen == 'random') {
+                context.goNamed('home');
               } else {
                 context.goNamed('home');
               }
@@ -247,8 +251,10 @@ class _TestScreenState extends State<TestScreen> {
             leading: IconButton(
               icon: const Icon(Icons.arrow_back),
               onPressed: () {
-                if (GoRouter.of(context).canPop()) {
-                  context.pop();
+                if (widget.sourceScreen == 'templates') {
+                  context.goNamed('test_templates');
+                } else if (widget.sourceScreen == 'random') {
+                  context.goNamed('home');
                 } else {
                   context.goNamed('home');
                 }
