@@ -18,5 +18,8 @@
   "marathon": "Marafon",
   "choose_language": "Tilni tanlang",
   "dark_theme": "Tungi mavzu",
-  "test":"Test"
+  "test":"Test",
+  "exam_passed": "Siz imtihondan o'tdingiz",
+  "exam_failed": "Siz imtihondan o'ta olmadingiz"
+
 }
