@@ -3,6 +3,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:go_router/go_router.dart';
+import '../../../models/test_model/results_metadata.dart';
 import '../../../models/test_model/test_model.dart';
 import '../../result/view/results_screen.dart';
 import '../../widgets /reusable_timer.dart';
@@ -420,7 +421,7 @@ class _TestScreenState extends State<TestScreen> {
 
         Future.delayed(const Duration(milliseconds: 500), () {
           if (_selectedAnswers.length == totalQuestions) {
-            print('➡️ Ответ завершён, fromRandomTest: ${widget.fromRandomTest}');
+            print(' Ответ завершён, fromRandomTest: ${widget.fromRandomTest}');
             context.pushNamed(
               'results',
               pathParameters: {
@@ -433,6 +434,12 @@ class _TestScreenState extends State<TestScreen> {
                     ? 'random'
                     : (widget.isMarathon ? 'marathon' : 'templates'),
               },
+              extra: (!widget.fromRandomTest && !widget.isMarathon)
+                  ? ResultsMetadata(
+                      source: 'templates',
+                      templateId: widget.templateNumber,
+                    )
+                  : null,
             );
           } else {
             _moveToNextQuestion();
@@ -489,7 +496,7 @@ class _TestScreenState extends State<TestScreen> {
 
   // Новый метод для передачи fromRandomTest
   void _navigateToResultsScreenWithRandom(bool fromRandomTest) {
-    print('➡️ Переход из таймера в ResultsScreen с fromRandomTest: ${widget.fromRandomTest}');
+    print(' Переход из таймера в ResultsScreen с fromRandomTest: ${widget.fromRandomTest}');
     final int totalQuestions = widget.totalQuestionsOverride ?? 20;
     context.pushNamed(
       'results',
@@ -503,6 +510,12 @@ class _TestScreenState extends State<TestScreen> {
             ? 'random'
             : (widget.isMarathon ? 'marathon' : 'templates'),
       },
+      extra: (!widget.fromRandomTest && !widget.isMarathon)
+          ? ResultsMetadata(
+              source: 'templates',
+              templateId: widget.templateNumber,
+            )
+          : null,
     );
   }
 

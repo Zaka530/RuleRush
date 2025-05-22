@@ -2,9 +2,31 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:easy_localization/easy_localization.dart';
 
+import '../../../repositories/tests_repository/test_progress_repository.dart';
+import '../../../models/test_model/test_progress_model.dart';
 
-class TestTemplatesScreen extends StatelessWidget {
+class TestTemplatesScreen extends StatefulWidget {
   const TestTemplatesScreen({super.key});
+
+  @override
+  State<TestTemplatesScreen> createState() => _TestTemplatesScreenState();
+}
+
+class _TestTemplatesScreenState extends State<TestTemplatesScreen> {
+  List<TestProgress> _progressList = [];
+
+  @override
+  void initState() {
+    super.initState();
+    _loadProgress();
+  }
+
+  Future<void> _loadProgress() async {
+    final progress = await ProgressRepository().getAllProgress();
+    setState(() {
+      _progressList = progress;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -47,6 +69,11 @@ class TestTemplatesScreen extends StatelessWidget {
   }
 
   Widget _buildTestCard(BuildContext context, int number) {
+    final progress = _progressList.firstWhere(
+      (p) => p.templateId == number,
+      orElse: () => TestProgress(templateId: number, correctAnswers: 0, incorrectAnswers: 0),
+    );
+
     return InkWell(
       onTap: () {
         print('Открываем тест $number');
@@ -59,7 +86,6 @@ class TestTemplatesScreen extends StatelessWidget {
             'source': 'templates',
           },
           extra: 'templates',
-
         );
       },
       borderRadius: BorderRadius.circular(16),
@@ -78,13 +104,44 @@ class TestTemplatesScreen extends StatelessWidget {
           ],
         ),
         child: Center(
-          child: Text(
-            "$number",
-            style: TextStyle(
-              fontSize: 24, // Увеличен шрифт
-              fontWeight: FontWeight.bold,
-              color: Theme.of(context).colorScheme.primary,
-            ),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                "$number",
+                style: TextStyle(
+                  fontSize: 24,
+                  fontWeight: FontWeight.bold,
+                  color: Theme.of(context).colorScheme.primary,
+                ),
+              ),
+              const SizedBox(height: 8),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 12.0),
+                child: LinearProgressIndicator(
+                  value: (progress.correctAnswers + progress.incorrectAnswers) == 0
+                      ? 0
+                      : progress.correctAnswers /
+                          (progress.correctAnswers + progress.incorrectAnswers),
+                  backgroundColor: Colors.red.withOpacity(0.2),
+                  valueColor: AlwaysStoppedAnimation<Color>(Colors.green),
+                  minHeight: 6,
+                ),
+              ),
+              const SizedBox(height: 8),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Icon(Icons.check, color: Colors.green, size: 14),
+                  const SizedBox(width: 4),
+                  Text('${progress.correctAnswers}', style: const TextStyle(fontSize: 12)),
+                  const SizedBox(width: 12),
+                  Icon(Icons.close, color: Colors.red, size: 14),
+                  const SizedBox(width: 4),
+                  Text('${progress.incorrectAnswers}', style: const TextStyle(fontSize: 12)),
+                ],
+              ),
+            ],
           ),
         ),
       ),

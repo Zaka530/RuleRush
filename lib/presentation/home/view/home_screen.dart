@@ -35,7 +35,7 @@ class HomeScreen extends StatelessWidget {
                     _buildSectionCard(
                       context,
                       title: "Test_templates".tr(),
-                      icon: LucideIcons.squareCheck, // Заменено
+                      icon: LucideIcons.squareCheck,
                       color: Colors.blueAccent,
                       onTap: () {context.push('/test_templates');
                       },

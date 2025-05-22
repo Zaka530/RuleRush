@@ -3,6 +3,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:go_router/go_router.dart';
 import 'package:easy_localization/easy_localization.dart';
+import '../../../models/test_model/results_metadata.dart';
+import '../../../models/test_model/test_progress_model.dart';
+import '../../../repositories/tests_repository/test_progress_repository.dart';
 import '../bloc/results_bloc.dart';
 import '../bloc/results_event.dart';
 import '../bloc/results_state.dart';
@@ -11,19 +14,24 @@ class ResultsScreen extends StatelessWidget {
   final int correctAnswers;
   final int wrongAnswers;
   final int totalQuestions;
+  final ResultsMetadata? resultsMetadata;
+
+
 
   const ResultsScreen({
     super.key,
     required this.correctAnswers,
     required this.wrongAnswers,
     required this.totalQuestions,
+    this.resultsMetadata,
+
   });
 
   @override
   Widget build(BuildContext context) {
     final goRouterState = GoRouterState.of(context);
     final source = goRouterState.uri.queryParameters['source'] ?? 'templates';
-    print('📊 ResultsScreen source: $source');
+    print(' ResultsScreen source: $source');
     return BlocProvider(
       create: (context) => ResultsBloc()
         ..add(LoadResults(
@@ -38,7 +46,7 @@ class ResultsScreen extends StatelessWidget {
           leading: IconButton(
             icon: const Icon(Icons.arrow_back),
             onPressed: () {
-              debugPrint('⬅️ Назад source = $source');
+              debugPrint('Назад source = $source');
               switch (source) {
                 case 'random':
                 case 'marathon':
@@ -56,6 +64,25 @@ class ResultsScreen extends StatelessWidget {
         body: BlocBuilder<ResultsBloc, ResultsState>(
           builder: (context, state) {
             if (state is ResultsLoaded) {
+              int? templateId = resultsMetadata?.templateId;
+
+              if (templateId == null) {
+                final templateIdStr = goRouterState.uri.queryParameters['templateId'];
+                templateId = int.tryParse(templateIdStr ?? '');
+              }
+
+              if (templateId != null) {
+                final progress = TestProgress(
+                  templateId: templateId,
+                  correctAnswers: state.correctAnswers,
+                  incorrectAnswers: state.wrongAnswers,
+                );
+                ProgressRepository().saveProgress(progress);
+                debugPrint('[📊 Progress Saved] templateId=$templateId, correct=${state.correctAnswers}, wrong=${state.wrongAnswers}');
+              } else {
+                debugPrint('[⚠️ Progress Skipped] No templateId in metadata or queryParameters.');
+              }
+              final bool passed = state.correctAnswers / state.totalQuestions >= 0.9;
               return Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                 child: Column(
@@ -63,10 +90,26 @@ class ResultsScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     const SizedBox(height: 10),
-                    Text(
-                      'your_results'.tr(),
-                      style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          passed ? Icons.check_circle_outline : Icons.cancel_outlined,
+                          color: passed ? Colors.green : Colors.red,
+                          size: 28,
+                        ),
+                        const SizedBox(width: 8),
+                        Text(
+                          passed ? 'exam_passed'.tr() : 'exam_failed'.tr(),
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: passed ? Colors.green : Colors.red,
+                          ),
+                        ),
+                      ],
                     ),
+                    const SizedBox(height: 16),
                     const SizedBox(height: 15),
                     Container(
                       padding: const EdgeInsets.all(20),

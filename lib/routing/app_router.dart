@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:easy_localization/easy_localization.dart';
 
 import '../bottom_navigation/view/bottom_navigation.dart';
+import '../models/test_model/results_metadata.dart';
 import '../presentation/home/view/home_screen.dart';
 import '../presentation/result/view/results_screen.dart';
 import '../presentation/settings/view/settings_screen.dart';
@@ -45,8 +46,8 @@ class AppRouter {
           final templateNumber = int.tryParse(state.pathParameters['templateNumber'] ?? '1') ?? 1;
 
           final fromRandomTest = state.uri.queryParameters['source'] == 'random';
-          print('🧪 query source = ${state.uri.queryParameters['source']}');
-          print('🧪 fromRandomTest = $fromRandomTest');
+          print('query source = ${state.uri.queryParameters['source']}');
+          print('fromRandomTest = $fromRandomTest');
 
           final sourceScreen = state.extra as String?;
 
@@ -65,7 +66,7 @@ class AppRouter {
         builder: (context, state) {
           final templateNumber = (List.generate(35, (index) => index + 1)..shuffle()).first;
 
-          print('⚡️ Переход в random с языком: ${context.locale}');
+          print('Переход в random с языком: ${context.locale}');
 
           Future.microtask(() {
             context.goNamed(
@@ -109,10 +110,14 @@ class AppRouter {
             state.pathParameters['totalQuestions'] ?? '0'
           ) ?? 0;
           final bool fromRandomTest = state.uri.queryParameters['source'] == 'random';
+          final metadata = state.extra as ResultsMetadata?;
+
           return ResultsScreen(
             correctAnswers: correct,
             wrongAnswers: wrong,
             totalQuestions: total,
+            resultsMetadata: metadata,
+
           );
         },
       ),
